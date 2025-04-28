@@ -1,0 +1,41 @@
+.top-par{
+    justify-content: center;
+    text-align: center;
+    color:rgb(1, 9, 17)
+    
+
+}
+.sam{
+    padding-top: 3000px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-style: groove 20px white;
+}
+
+.background{
+    background-color: black;
+}
+
+.ggg{
+    justify-content: center;
+    text-align: center;
+}
+
+.first{
+    display: flex;
+    background:darkgray;
+    
+}
+
+.wrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color:#333333 ;
+    color: #00ff00;
+    border-radius: 5px;
+}
