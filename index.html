@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="hand.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <p class="top-par">
-      Rock Paper Scissors <span style="color: unset">Game</span>
-    </p>
-    <div class="sam">
-      <button id="rockBtn">Rock</button>
-      <button id="paperBtn">Paper</button>
-      <button id="ScissorsBtn">Scissors</button>
-      <button id="delete-button">Reset score</button>
+    <main class="container">
+      <h1 class="title">
+        Rock Paper Scissors <span class="highlight">Game</span>
+      </h1>
+
+      <section class="game-controls">
+        <button id="rockBtn" class="game-button">
+          <i class="fas fa-hand-fist"></i>
+        </button>
+        <button id="paperBtn" class="game-button">
+          <i class="fas fa-hand"></i>
+        </button>
+        <button id="ScissorsBtn" class="game-button">
+          <i class="fas fa-hand-scissors"></i>
+        </button>
+        <button id="delete-button" class="reset-button">
+          <i class="fas fa-rotate-left"></i>
+        </button>
+      </section>
+
       <p class="update-score"></p>
       <div class="delete-result"></div>
-    </div>
-    <div id="output"></div>
+      <div id="output"></div>
 
-    <p class="ggg"><a href="dom.html">Click here</a> to switch home page</p>
+      <footer class="footer">
+        <p class="foot-bar">
+          <a href="https://portfolio-web-isbu.vercel.app">Click Here</a> To Eee
+          More Projects
+        </p>
+      </footer>
+    </main>
+
+    <script src="hand.js"></script>
   </body>
-  <script src="hand.js"></script>
 </html>
- 

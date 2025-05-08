@@ -1,41 +1,109 @@
-.top-par{
-    justify-content: center;
-    text-align: center;
-    color:rgb(1, 9, 17)
-    
-
-}
-.sam{
-    padding-top: 3000px;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    border-style: groove 20px white;
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.background{
-    background-color: black;
+/* Full Page Layout */
+html,
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+  color: #111;
 }
 
-.ggg{
-    justify-content: center;
-    text-align: center;
+/* Center Everything */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.first{
-    display: flex;
-    background:darkgray;
-    
+/* Wrapper */
+.container {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.wrapper{
-    justify-content: center;
-    align-items: center;
+/* Title */
+.title {
+  font-family: "Patrick Hand", cursive;
+  font-size: 2.2rem;
+  color: #010911;
 }
 
-.btn{
-    background-color:#333333 ;
-    color: #00ff00;
-    border-radius: 5px;
+/* Game Buttons in Circles */
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-button,
+.reset-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-button {
+  background-color: #333;
+  color: #0f0;
+}
+
+.reset-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.game-button:hover,
+.reset-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Score Message */
+.update-score,
+.delete-result {
+  font-weight: bold;
+  color: #444;
+  min-height: 40px;
+}
+
+/* Footer INSIDE container */
+.footer {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.foot-bar {
+  margin: 0;
+}
+
+.foot-bar a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.foot-bar a:hover {
+  text-decoration: underline;
 }
